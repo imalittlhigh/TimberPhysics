@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "values": [
+      "#minecraft:dark_oak_logs",
+      "#minecraft:oak_logs",
+      "#minecraft:acacia_logs",
+      "#minecraft:birch_logs",
+      "#minecraft:jungle_logs",
+      "#minecraft:spruce_logs",
+      "minecraft:mangrove_roots",
+      "minecraft:muddy_mangrove_roots",
+      "minecraft:mangrove_log",
+      "minecraft:mangrove_wood",
+      "minecraft:stripped_mangrove_log",
+      "minecraft:stripped_mangrove_wood",
+      "minecraft:cherry_log",
+      "minecraft:cherry_wood",
+      "minecraft:stripped_cherry_log",
+      "minecraft:stripped_cherry_wood"
+    ]
+  }

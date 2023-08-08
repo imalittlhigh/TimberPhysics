@@ -1,0 +1,7 @@
+##
+ # help.mcfunction
+ # 
+ #
+ # Created by imalittlhigh.
+##
+tellraw @a ["",{"text":"-------------------------","color":"gold"},{"text":"\nTimber Physics Help\n"},{"text":"-------------------------","color":"gold"},{"text":"\n"},{"text":"Not using Timber:","hoverEvent":{"action":"show_text","contents":"Not having the Tree youre chopping fall over"}},{"text":"\n - do "},{"text":"/trigger physicstimber.options","clickEvent":{"action":"run_command","value":"/trigger physicstimber.options"},"hoverEvent":{"action":"show_text","contents":"Klick to run this command"}},{"text":"\n  to customize what sneaking does.\n - use an "},{"text":"Axe with Silk Touch"},{"text":".\n\nWhen does Timber trigger:\n - "},{"text":"when it detects a Tree","hoverEvent":{"action":"show_text","contents":"A Tree is defined as 3+ Logs of any type that are\nconnected to at least 1 Leaf Block that is naturally generated."}},{"text":"\n - "},{"text":"when the Tree is naturally generated","hoverEvent":{"action":"show_text","contents":"Meaning the Tree has Leaves that are not persistent"}},{"text":"\n\nAdmin Options:\n - to change the Timber settings use\n   "},{"text":"/function atimber:options/customize","clickEvent":{"action":"suggest_command","value":"/function atimber:options/customize"},"hoverEvent":{"action":"show_text","contents":"Klick to get the command suggested"}},{"text":"\n"},{"text":"-------------------------","color":"gold"}]
