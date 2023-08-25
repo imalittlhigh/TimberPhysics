@@ -5,7 +5,7 @@
  # Created by imalittlhigh.
 ##
 
-execute as @a as @s[tag=!atimber.sneak.pause] as @s[tag=!atimber.sneak.go] run tag @s add atimber.sneak.pause
+#execute as @a as @s[tag=!atimber.sneak.pause] as @s[tag=!atimber.sneak.go] run tag @s add atimber.sneak.pause
 
 kill @e[tag=atimber.marker,scores={atimber.timer=2..}]
 scoreboard players add @e[tag=atimber.marker] atimber.timer 1
@@ -15,5 +15,7 @@ scoreboard players add @e[tag=atimber.marker] atimber.timer 1
 
 tag @a[tag=!atimber.sneak.pause,tag=!atimber.sneak.go] add atimber.sneak.pause
 
+scoreboard players enable @a physicstimber.options
+scoreboard players enable @a physicstimber.help
 
 schedule function atimber:meta/sec 1s
