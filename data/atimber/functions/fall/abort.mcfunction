@@ -4,4 +4,4 @@
  #
  # Created by imalittlhigh.
 ##
-kill @e[tag=atimber.marker]
+kill @s[tag=atimber.marker]
