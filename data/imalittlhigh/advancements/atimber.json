@@ -19,5 +19,5 @@
             "trigger": "minecraft:tick"
         }
     },
-    "parent": "atimber:root"
+    "parent": "imalittlhigh:root"
 }
