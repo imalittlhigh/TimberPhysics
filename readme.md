@@ -1,1 +1,1 @@
-A Minecraft Datapack for Treefelling
+A Minecraft Datapack for immersive Treefelling
