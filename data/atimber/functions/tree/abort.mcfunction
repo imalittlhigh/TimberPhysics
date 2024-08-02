@@ -6,4 +6,4 @@
 ##
 scoreboard players set atimber.leavescount atimber.leavescount 0
 
-kill @e[tag=atimber.marker]
+kill @e[type=marker,tag=atimber.marker]
