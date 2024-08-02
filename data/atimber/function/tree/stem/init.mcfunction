@@ -5,7 +5,6 @@
  # Created by imalittlhigh.
 ##
 
-
 advancement revoke @s only atimber:log_broken/log
 
 scoreboard players set atimber.logcount atimber.logcount 0
@@ -31,6 +30,5 @@ execute at @e[type=marker,tag=atimber.marker.start] store result score atimber.h
 
 execute as @s[tag=atimber.sneak.pause,predicate=atimber:player/not_sneaking,predicate=!atimber:player/holding_silktouch] as @e[type=marker,tag=atimber.marker.start,tag=!atimber.marker.log.processed] at @s run function atimber:tree/stem/start
 execute as @s[tag=atimber.sneak.go,predicate=!atimber:player/not_sneaking,predicate=!atimber:player/holding_silktouch] as @e[type=marker,tag=atimber.marker.start,tag=!atimber.marker.log.processed] at @s run function atimber:tree/stem/start
-
 
 

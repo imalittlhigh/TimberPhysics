@@ -5,7 +5,6 @@
  # Created by imalittlhigh.
 ##
 
-
 execute positioned ~ ~ ~ run tag @e[tag=atimber.marker.log] add atimber.marker.log.processed
 
 execute positioned ~ ~1 ~ if block ~ ~ ~ #atimber:logs unless entity @e[type=marker,tag=atimber.marker.log,distance=..0.1] run function atimber:tree/stem/logtype/type
