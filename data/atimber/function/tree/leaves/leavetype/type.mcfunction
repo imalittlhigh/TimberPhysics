@@ -5,6 +5,9 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Marking Leaf Type","color":"white"}]
+
+
 execute if block ~ ~ ~ oak_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.oak_leaves"]}
 execute if block ~ ~ ~ spruce_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.spruce_leaves"]}
 execute if block ~ ~ ~ birch_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.birch_leaves"]}
@@ -15,6 +18,8 @@ execute if block ~ ~ ~ mangrove_leaves run summon marker ~ ~ ~ {NoGravity:1b,Inv
 execute if block ~ ~ ~ azalea_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.azalea_leaves"]}
 execute if block ~ ~ ~ flowering_azalea_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.flowering_azalea_leaves"]}
 execute if block ~ ~ ~ cherry_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.cherry_leaves"]}
+execute if block ~ ~ ~ pale_oak_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.pale_oak_leaves"]}
+
 
 execute if block ~ ~ ~ #leaves[distance=1] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 1
 execute if block ~ ~ ~ #leaves[distance=2] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 2

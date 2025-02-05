@@ -5,6 +5,9 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Initiating Fall - Logs","color":"white"}]
+
+
 setblock ~ ~ ~ air replace
 
 execute store result score @s atimber.hight run data get entity @s Pos[1]
@@ -52,6 +55,16 @@ execute as @s[tag=atimber.marker.cherry_log] run function atimber:fall/logs/cher
 execute as @s[tag=atimber.marker.cherry_wood] run function atimber:fall/logs/cherry/wood
 execute as @s[tag=atimber.marker.stripped_cherry_log] run function atimber:fall/logs/cherry/stripped_log
 execute as @s[tag=atimber.marker.stripped_cherry_wood] run function atimber:fall/logs/cherry/stripped_wood
+
+execute as @s[tag=atimber.marker.pale_oak_log] run function atimber:fall/logs/pale_oak/log
+execute as @s[tag=atimber.marker.pale_oak_wood] run function atimber:fall/logs/pale_oak/wood
+execute as @s[tag=atimber.marker.stripped_pale_oak_log] run function atimber:fall/logs/pale_oak/stripped_log
+execute as @s[tag=atimber.marker.stripped_pale_oak_wood] run function atimber:fall/logs/pale_oak/stripped_wood
+
+execute as @s[tag=atimber.marker.creaking_heart_a_n] run function atimber:fall/logs/pale_oak/creaking_heart_a_n
+execute as @s[tag=atimber.marker.creaking_heart_n] run function atimber:fall/logs/pale_oak/creaking_heart_n
+execute as @s[tag=atimber.marker.creaking_heart_a] run function atimber:fall/logs/pale_oak/creaking_heart_a
+execute as @s[tag=atimber.marker.creaking_heart] run function atimber:fall/logs/pale_oak/creaking_heart
 
 
 kill @s

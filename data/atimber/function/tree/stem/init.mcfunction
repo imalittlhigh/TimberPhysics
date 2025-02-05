@@ -5,6 +5,8 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Felling Detected","color":"white"}]
+
 advancement revoke @s only atimber:log_broken/log
 
 scoreboard players set atimber.logcount atimber.logcount 0

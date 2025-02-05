@@ -5,6 +5,10 @@
  # Created by imalittlhigh.
 ##
 #,distance=..0.1
+
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Looping Leaves","color":"white"}]
+
+
 execute positioned ~ ~ ~ run tag @e[type=marker,tag=atimber.marker.leaves,distance=..0.5] add atimber.marker.leaves.processed
 
 execute positioned ~ ~1 ~ if block ~ ~ ~ #leaves[persistent=false] unless entity @e[type=marker,tag=atimber.marker.leaves,distance=..0.2] run function atimber:tree/leaves/leavetype/type

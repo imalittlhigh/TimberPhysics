@@ -5,6 +5,8 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Summoning Spruce Leaf","color":"white"}]
+
 
 execute as @s[scores={atimber.hight=0..1}] if data storage atimber:fall {dir:"south"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:spruce_leaves",Properties:{persistent:"false"}},NoGravity:0b,Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.0,0.1]}
 execute as @s[scores={atimber.hight=0..1}] if data storage atimber:fall {dir:"north"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:spruce_leaves",Properties:{persistent:"false"}},NoGravity:0b,Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.0,-0.1]}

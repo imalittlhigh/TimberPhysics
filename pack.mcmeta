@@ -1,6 +1,21 @@
 {
 	"pack": {
-		"pack_format": 48,
-		"description": "Timber Physics by imalittlhigh"
+	  "pack_format": 61,
+	  "description": {
+		"text": "Timber Physics",
+		"color": "gold",
+		"extra": [
+		  {
+			"text": " by ",
+			"color": "aqua"
+		  },
+		  {
+			"text": "imalittlhigh",
+			"color": "gold",
+			"italic": true
+		  }
+		]
+	  }
 	}
-}
+  }
+  

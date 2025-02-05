@@ -5,6 +5,8 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Marking Log Type","color":"white"}]
+
 tag @s[tag=atimber.marker.start] add atimber.marker.start.found
 
 scoreboard players add atimber.logcount atimber.logcount 1
@@ -52,3 +54,14 @@ execute if block ~ ~ ~ cherry_log run summon marker ~ ~ ~ {NoGravity:1b,Invulner
 execute if block ~ ~ ~ stripped_cherry_log run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_cherry_log"]}
 execute if block ~ ~ ~ cherry_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.cherry_wood"]}
 execute if block ~ ~ ~ stripped_cherry_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_cherry_wood"]}
+
+execute if block ~ ~ ~ creaking_heart[active=true,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a_n"]}
+execute if block ~ ~ ~ creaking_heart[active=false,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_n"]}
+execute if block ~ ~ ~ creaking_heart[active=true,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a"]}
+execute if block ~ ~ ~ creaking_heart[active=false,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart"]}
+
+execute if block ~ ~ ~ pale_oak_log run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.pale_oak_log"]}
+execute if block ~ ~ ~ stripped_pale_oak_log run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_pale_oak_log"]}
+execute if block ~ ~ ~ pale_oak_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.pale_oak_wood"]}
+execute if block ~ ~ ~ stripped_pale_oak_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_pale_oak_wood"]}
+

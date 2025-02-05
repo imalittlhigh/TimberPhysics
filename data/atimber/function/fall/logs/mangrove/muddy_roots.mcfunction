@@ -5,6 +5,8 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Summoning Muddy Mangrove Roots","color":"white"}]
+
 
 
 execute as @s[scores={atimber.hight=..1}] if data storage atimber:fall {dir:"south"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:muddy_mangrove_roots",Properties:{axis:"z"}},NoGravity:0b,Time:1,DropItem:1b,HurtEntities:1b,Motion:[0.0,0.0,0.1]}
