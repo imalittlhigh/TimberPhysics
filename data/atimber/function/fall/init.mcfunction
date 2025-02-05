@@ -5,6 +5,7 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Initiating Fall","color":"white"}]
 
 
 

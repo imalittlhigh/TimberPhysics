@@ -5,6 +5,9 @@
  # Created by imalittlhigh.
 ##
 
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Initiating Fall - Leaves","color":"white"}]
+
+
 setblock ~ ~ ~ air replace
 
 execute store result score @s atimber.hight run data get entity @s Pos[1]
@@ -20,5 +23,7 @@ execute as @s[tag=atimber.marker.mangrove_leaves] run function atimber:fall/leav
 execute as @s[tag=atimber.marker.azalea_leaves] run function atimber:fall/leaves/azalea
 execute as @s[tag=atimber.marker.flowering_azalea_leaves] run function atimber:fall/leaves/flowering_azalea
 execute as @s[tag=atimber.marker.cherry_leaves] run function atimber:fall/leaves/cherry
+execute as @s[tag=atimber.marker.pale_oak_leaves] run function atimber:fall/leaves/pale_oak
+
 
 kill @s

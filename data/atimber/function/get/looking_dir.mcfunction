@@ -4,6 +4,10 @@
  #
  # Created by imalittlhigh.
 ##
+
+tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Getting Looking Direction","color":"white"}]
+
+
 tag @a remove atimber.south
 tag @a remove atimber.west
 tag @a remove atimber.north
