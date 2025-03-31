@@ -55,10 +55,14 @@ execute if block ~ ~ ~ stripped_cherry_log run summon marker ~ ~ ~ {NoGravity:1b
 execute if block ~ ~ ~ cherry_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.cherry_wood"]}
 execute if block ~ ~ ~ stripped_cherry_wood run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_cherry_wood"]}
 
-execute if block ~ ~ ~ creaking_heart[active=true,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a_n"]}
-execute if block ~ ~ ~ creaking_heart[active=false,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_n"]}
-execute if block ~ ~ ~ creaking_heart[active=true,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a"]}
-execute if block ~ ~ ~ creaking_heart[active=false,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=uprooted,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_u_n"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=awake,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a_n"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=dormant,natural=true] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_d_n"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=uprooted,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_u"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=awake,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_a"]}
+execute if block ~ ~ ~ creaking_heart[creaking_heart_state=dormant,natural=false] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.creaking_heart_d"]}
+
+
 
 execute if block ~ ~ ~ pale_oak_log run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.pale_oak_log"]}
 execute if block ~ ~ ~ stripped_pale_oak_log run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.log","atimber.marker.stripped_pale_oak_log"]}

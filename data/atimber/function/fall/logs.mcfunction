@@ -61,10 +61,13 @@ execute as @s[tag=atimber.marker.pale_oak_wood] run function atimber:fall/logs/p
 execute as @s[tag=atimber.marker.stripped_pale_oak_log] run function atimber:fall/logs/pale_oak/stripped_log
 execute as @s[tag=atimber.marker.stripped_pale_oak_wood] run function atimber:fall/logs/pale_oak/stripped_wood
 
+execute as @s[tag=atimber.marker.creaking_heart_u_n] run function atimber:fall/logs/pale_oak/creaking_heart_u_n
 execute as @s[tag=atimber.marker.creaking_heart_a_n] run function atimber:fall/logs/pale_oak/creaking_heart_a_n
-execute as @s[tag=atimber.marker.creaking_heart_n] run function atimber:fall/logs/pale_oak/creaking_heart_n
+execute as @s[tag=atimber.marker.creaking_heart_d_n] run function atimber:fall/logs/pale_oak/creaking_heart_d_n
+execute as @s[tag=atimber.marker.creaking_heart_u] run function atimber:fall/logs/pale_oak/creaking_heart_u
 execute as @s[tag=atimber.marker.creaking_heart_a] run function atimber:fall/logs/pale_oak/creaking_heart_a
-execute as @s[tag=atimber.marker.creaking_heart] run function atimber:fall/logs/pale_oak/creaking_heart
+execute as @s[tag=atimber.marker.creaking_heart_d] run function atimber:fall/logs/pale_oak/creaking_heart_d
+
 
 
 kill @s
