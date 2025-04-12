@@ -4,14 +4,19 @@
  #
  # Created by imalittlhigh.
 ##
-
+#debug
 tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Initiating Fall - Logs","color":"white"}]
 
-
+#removing log block
 setblock ~ ~ ~ air replace
 
+#getting height of block
 execute store result score @s atimber.hight run data get entity @s Pos[1]
+#getting relative height
 scoreboard players operation @s atimber.hight -= atimber.hight.start atimber.hight
+
+
+#spawning falling blocks at pos with motion depending on height
 
 execute as @s[tag=atimber.marker.oak_log] run function atimber:fall/logs/oak/log
 execute as @s[tag=atimber.marker.oak_wood] run function atimber:fall/logs/oak/wood
@@ -68,6 +73,5 @@ execute as @s[tag=atimber.marker.creaking_heart_u] run function atimber:fall/log
 execute as @s[tag=atimber.marker.creaking_heart_a] run function atimber:fall/logs/pale_oak/creaking_heart_a
 execute as @s[tag=atimber.marker.creaking_heart_d] run function atimber:fall/logs/pale_oak/creaking_heart_d
 
-
-
+#removing marker
 kill @s

@@ -4,10 +4,11 @@
  #
  # Created by imalittlhigh.
 ##
-
+#debug
 tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Summoning Creaking Heart","color":"white"}]
 
-
+#this is all the same, so im only gonna comment one
+#summonging falling blocks, with correcnt falling direction and motion depending on the height they are on the tree and state of creaking heart.
 execute as @s[scores={atimber.hight=..1}] if data storage atimber:fall {dir:"south"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:creaking_heart",Properties:{axis:"z",creaking_heart_state:"uprooted",natural:"true"}},NoGravity:0b,Time:1,DropItem:1b,HurtEntities:1b,Motion:[0.0,0.0,0.1]}
 execute as @s[scores={atimber.hight=..1}] if data storage atimber:fall {dir:"north"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:creaking_heart",Properties:{axis:"z",creaking_heart_state:"uprooted",natural:"true"}},NoGravity:0b,Time:1,DropItem:1b,HurtEntities:1b,Motion:[0.0,0.0,-0.1]}
 execute as @s[scores={atimber.hight=..1}] if data storage atimber:fall {dir:"east"} run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:creaking_heart",Properties:{axis:"x",creaking_heart_state:"uprooted",natural:"true"}},NoGravity:0b,Time:1,DropItem:1b,HurtEntities:1b,Motion:[0.1,0.0,0.0]}

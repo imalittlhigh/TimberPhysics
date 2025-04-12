@@ -4,15 +4,16 @@
  #
  # Created by imalittlhigh.
 ##
-
+#debug
 tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Getting Looking Direction","color":"white"}]
 
-
+#removing facing tags froim player
 tag @a remove atimber.south
 tag @a remove atimber.west
 tag @a remove atimber.north
 tag @a remove atimber.east
 
+#getting looking direction for each kardinal direction
 execute as @s[y_rotation=-45..45] run data modify storage atimber:fall dir set value "south"
 
 execute as @s[y_rotation=45..135] run data modify storage atimber:fall dir set value "west"

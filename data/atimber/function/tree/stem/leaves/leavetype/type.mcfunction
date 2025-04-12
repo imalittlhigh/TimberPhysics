@@ -4,10 +4,10 @@
  #
  # Created by imalittlhigh.
 ##
-
+#debug
 tellraw @a[tag=atimber.debug] [{"text":"Timber-Debug:","color":"yellow"},{"text":" Detecting First Leaves","color":"white"}]
 
-
+#spawning marker at found leaf, with tags depending on the type of block found
 execute if block ~ ~ ~ oak_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.oak_leaves"]}
 execute if block ~ ~ ~ spruce_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.spruce_leaves"]}
 execute if block ~ ~ ~ birch_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.birch_leaves"]}
@@ -20,8 +20,7 @@ execute if block ~ ~ ~ flowering_azalea_leaves run summon marker ~ ~ ~ {NoGravit
 execute if block ~ ~ ~ cherry_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.cherry_leaves"]}
 execute if block ~ ~ ~ pale_oak_leaves run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["atimber.marker","atimber.marker.leaves","atimber.marker.pale_oak_leaves"]}
 
-
-
+#setting distance data of leaves in score of marker
 execute if block ~ ~ ~ #leaves[distance=1] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 1
 execute if block ~ ~ ~ #leaves[distance=2] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 2
 execute if block ~ ~ ~ #leaves[distance=3] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 3
@@ -38,7 +37,8 @@ execute if block ~ ~ ~ #leaves[distance=13] run scoreboard players set @e[type=m
 execute if block ~ ~ ~ #leaves[distance=14] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 14
 execute if block ~ ~ ~ #leaves[distance=15] run scoreboard players set @e[type=marker,tag=atimber.marker.leaves,distance=..0.5,limit=1,sort=nearest] atimber.leavedist.new 15
 
+#counting blocks
 execute if block ~ ~ ~ #leaves as @e[type=marker,tag=atimber.marker.leaves,distance=..0.1] run scoreboard players add atimber.leavescount atimber.leavescount 1
 
-
+#starting leaf mass detection
 execute as @e[type=marker,tag=atimber.marker.leaves,tag=!atimber.marker.leaves.processed,distance=..0.5] at @s run function atimber:tree/leaves/loop
