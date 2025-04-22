@@ -34,6 +34,7 @@ scoreboard objectives add atimber.timer dummy
 #scorebaords for customizing
 scoreboard objectives add physicstimber.options trigger
 scoreboard objectives add physicstimber.help trigger
+scoreboard objectives add physicstimber.sneak_option trigger
 
 #setting standard values for size
 execute unless score atimber.options atimber.max.log matches 0.. run scoreboard players set atimber.options atimber.max.log 200
